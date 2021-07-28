@@ -8,6 +8,8 @@ The goal of this research project is to map out routes that will avoid adverse w
 - Implement JavaScript functionality
 - Improve the look of the website
 
+
+Technologies
 - HTML
 - CSS
 - JavaScript
