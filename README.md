@@ -11,9 +11,8 @@ The goal of this research project is to map out routes that will avoid adverse w
 
 Technologies
 - HTML
-- CSS
+- CSS | BootStrap Framework
 - JavaScript
-- BootStrap Framework
 - JSON
 - Google Maps JS Libraries API
 - OpenWeatherMap API
