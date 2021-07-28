@@ -1,0 +1,78 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>Weather-Based Journey Planner</title>
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <script src="https://kit.fontawesome.com/ab2155e76b.js" crossorigin="anonymous"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="App.css" rel="stylesheet" />
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+  <h1>Journal Planner</h1>
+  <h1>Origin and Destination</h1>
+  <h2>Walking and Cycling Journal Planner (High Resolution Weather Forecast)</h2>
+
+    <div class="jumbotron">
+        <div class="container-fluid">
+            <form class="form-horizontal">
+                <div class="form-group">
+                    <label for="from" class="col-xs-2 control-label"><i class="far fa-dot-circle"></i></label>
+                    <div class="col-xs-4">
+                        <input type="text" id="from" placeholder="Origin" class="form-control" >
+                    </div>
+                    <div class="col-xs-4">
+                        <input type="text" autocomplete="off" class="search-box" placeholder="Weather Press Enter..." />
+                    </div>
+               </div>
+
+               <div class="form-group">
+                
+                    <label for="to" class="col-xs-2 control-label"><i class="fas fa-map-marker-alt"></i></label>
+                    <div class="col-xs-4">
+                        <input type="text" id="to" placeholder="Destination" class="form-control">
+                    </div>
+                  
+                 </div>
+                 
+            </form>
+
+            <div class="col-xs-offset-2 col-xs-10">
+                <button class="btn btn-info btn-lg " onclick="calcRoute();"><i class="fas fa-map-signs"></i></button>
+            </div>
+        </div>
+        <div class="container-fluid">
+            <div class="app-wrap">
+                <main>
+                  <section class="location">
+                    <div class="city">Northampton, GB</div>
+                    <div class="date">Thursday 10 January 2020</div>
+                  </section>
+                  <div class="current">
+                    <div class="temp">15<span>°c</span></div>
+                    <div class="weather">Sunny</div>
+                    <div class="hi-low">13°c / 16°c</div>
+                  </div>
+                  
+                </main>
+              </div>
+
+            </div>
+            <div id="output"></div>
+
+            </div>
+        </div>
+        <div id="googleMap"></div>
+
+    </div>
+
+    <script src="weather.js"></script></body>
+    <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBH5PR7AutP6wP3x5Ux9nd1axCuNL1Ws6I&libraries=places"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="Scripts/jquery-3.1.1.min.js"></script>
+    <script src="Main.js"></script>
+</html>
