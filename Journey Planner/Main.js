@@ -27,7 +27,7 @@ function calcRoute() {
     var request = {
         origin: document.getElementById("from").value,
         destination: document.getElementById("to").value,
-        travelMode: google.maps.TravelMode.WALKING, //WALKING, BYCYCLING, TRANSIT
+        travelMode: google.maps.TravelMode.WALKING, //WALKING, BYCYCLING
         unitSystem: google.maps.UnitSystem.IMPERIAL
     }
 

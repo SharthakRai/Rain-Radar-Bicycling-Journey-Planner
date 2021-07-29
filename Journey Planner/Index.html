@@ -11,62 +11,52 @@
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-  <h1>Journal Planner</h1>
-  <h1>Origin and Destination</h1>
-  <h2>Walking and Cycling Journal Planner </h2>
+    <div class="jumbotron jumbotron-fluid">
+        <div class="container">
+          <h1 class="display-4">Weather-Based Journey Planner</h1>
+          <p class="lead">Walking and Cycling routes with Weather Forecast.</p>
+        </div>
+      </div>
 
-    <div class="jumbotron">
-        <div class="container-fluid">
-            <form class="form-horizontal">
+        <div class="container">
                 <div class="form-group">
                     <label for="from" class="col-xs-2 control-label"><i class="far fa-dot-circle"></i></label>
-                    <div class="col-xs-4">
-                        <input type="text" id="from" placeholder="Origin" class="form-control" >
-                    </div>
-                    <div class="col-xs-4">
-                        <input type="text" autocomplete="off" class="search-box" placeholder="Weather Press Enter..." />
-                    </div>
+                        <input type="text" class="form-control" id="from" placeholder="Origin, press enter for weather" class="form-control" >
                </div>
-
-               <div class="form-group">
                 
+               <div class="form-group">
                     <label for="to" class="col-xs-2 control-label"><i class="fas fa-map-marker-alt"></i></label>
-                    <div class="col-xs-4">
-                        <input type="text" id="to" placeholder="Destination" class="form-control">
-                    </div>
-                  
-                 </div>
-                 
-            </form>
+                        <input type="text" class="form-control" id="to" placeholder="Destination" class="form-control">
+                
+                </div>
 
-            <div class="col-xs-offset-2 col-xs-10">
-                <button class="btn btn-info btn-lg " onclick="calcRoute();"><i class="fas fa-map-signs"></i></button>
+            <div class="form-group">
+                <button type="submit" id="submit" class="btn btn-primary btn-lg btn-block" onclick="calcRoute();">Submit</i></button>
             </div>
-        </div>
-        <div class="container-fluid">
-            <div class="app-wrap">
-                <main>
-                  <section class="location">
-                    <div class="city">City, Country</div>
-                    <div class="date">Day Month Year</div>
-                  </section>
-                  <div class="current">
-                    <div class="temp">Temp<span>°c</span></div>
-                    <div class="weather">Sunny</div>
-                    <div class="hi-low">Low°c / High°c</div>
-                  </div>
-                  
-                </main>
+                 
+            <div class="jumbotron jumbotron-fluid">
+                <div class="container">
+                    <main>
+                        <section class="location">
+                          <div class="city">City, Country</div>
+                          <div class="date">Day Month Year</div>
+                        </section>
+                        <div class="current">
+                          <div class="temp">Temp<span>°c</span></div>
+                          <div class="weather">Sunny</div>
+                          <div class="hi-low">Low°c / High°c</div>
+                        </div>
+                        
+                      </main>
+                      <div id="output"></div>
+                </div>
               </div>
 
-            </div>
-            <div id="output"></div>
 
             </div>
         </div>
         <div id="googleMap"></div>
 
-    </div>
 
     <script src="weather.js"></script></body>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
