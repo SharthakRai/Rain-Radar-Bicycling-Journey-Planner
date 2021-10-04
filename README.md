@@ -9,11 +9,10 @@ The goal of this research project is to map out routes that will avoid adverse w
 - Improve the look of the website
 
 
-Technologies
+Technology Stack
 - HTML
 - CSS | BootStrap Framework
 - JavaScript
-- JSON
 - Google Maps JS Libraries API
 - OpenWeatherMap API
 - Rainview API
