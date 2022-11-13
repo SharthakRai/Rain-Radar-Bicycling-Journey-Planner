@@ -26,7 +26,7 @@
     <div class="jumbotron jumbotron-fluid">
         <div class="container">
           <h1 class="display-4">Rain-Radar BiCycling Map</h1>
-          <h2 class="lead">Weather Conscious Radar-Based Cycling Routes</h2>
+          <h2 class="lead">Rain-Radar Display for Cyclists | Plan Routes</h2>
         </div>
       </div>
 
@@ -77,16 +77,16 @@
 <!-- Rain radar UI -->
 
 <ul style="text-align:center; top: 0; left: 0; right: 0; height:20px;">
-    <li><input type="radio" name="kind" checked="checked" onchange="setKind('radar')">Rain Radar
+    <!-- <li><input type="radio" name="kind" checked="checked" onchange="setKind('radar')">Rain Radar -->
 
     <li><input type="button" onclick="stop(); showFrame(animationPosition - 1); return;" value="&lt;" /></li>
     <li><input type="button" onclick="playStop();" value="Play/Stop" /></li>
     <li><input type="button" onclick="stop(); showFrame(animationPosition + 1); return;" value="&gt;" /></li>
 
-    <li><select id="colors" onchange="setColors(); return;">
+    <!-- <li><select id="colors" onchange="setColors(); return;">
         <option value="2" selected="selected">Universal Blue</option>
 
-    </select></li>
+    </select></li> -->
 </ul>
 
 <div id="timestamp" style="text-align:center; top: 0; left: 0; right: 0; ">FRAME TIME</div>
