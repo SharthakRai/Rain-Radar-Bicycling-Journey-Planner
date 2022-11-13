@@ -17,18 +17,18 @@ h1, h2 {
 }
 
 .form-group {
-  margin: 20px;
+  margin: 15px;
   display: flex;
 }
 
 .container-fluid {
-  float: left;
+  float: center;
 }
 
 
   /*map*/
 #googleMap {
-  width: 80%;
+  width: 95%;
   height: 600px;
   margin: auto;
 }
@@ -36,17 +36,17 @@ h1, h2 {
 #map {
   height: 500px;
   width: 600px;
-}
+} */
 
-img {
+ img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   width: 50%;
 }
 
-#mapid {
+/* #mapid {
   width: 1px;
   height: 1px;
-  margin: auto;
-}
+  margin: auto; 
+} */
